@@ -1,0 +1,110 @@
+{
+	"layer": "top", "position": "top",
+	"modules-left": ["custom/logo","hyprland/workspaces", "disk", "memory", "cpu", "temperature"],
+	"modules-center": ["clock"],
+	"modules-right": ["pulseaudio", "network",  "battery" ,"bluetooth"],
+	"reload_style_on_change":true,
+
+	"custom/logo": {
+		"format": "",
+	},
+
+	"hyprland/workspaces": {
+		"format": "{name}",
+	},
+
+	"clock": {
+		"format": "{:%H:%M:%S}",
+		"format-alt":"{:%d %b %Y}",
+		"interval":1,
+	},
+
+	"bluetooth": {
+		"format-on": "",
+		"format-off": "",
+		"format-disabled": "󰂲",
+		"format-connected": "󰂴",
+		"format-connected-battery": "󰂴 {device_battery_percentage}%",
+		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	}, 
+
+	"network": {
+		"format-wifi": "  {essid} - ({signalStrength}%)",
+		"format-ethernet":" ",
+		"format-disconnected": "",
+		"tooltip-format": "{ipaddr}",
+		"tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
+		"tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
+		"on-click": "networkmanager_dmenu"
+	},
+
+	"battery": {
+		"interval":1,
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 20
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": "󰂄 {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-alt": "{time} {icon}",
+		"format-icons": [
+			"󰁻",
+			"󰁼",
+			"󰁾",
+			"󰂀",
+			"󰂂",
+			"󰁹"
+		],
+	},
+
+	"disk": {
+		"interval": 30,
+		"format": "  {percentage_used}%",
+		"path": "/"
+	},
+
+	"cpu": {
+		"interval": 1,
+		"format": "  {usage}%",
+	},
+
+	"memory": {
+		"format": "  {percentage}%"
+	},
+
+	"hyprland/window": {
+		"format": "{title}",
+	},
+
+	"temperature": {
+		"format": " {temperatureC}°C",            
+		"format-critical": " {temperatureC}°C",
+		"interval": 1,
+		"critical-threshold": 80,
+		"on-click": "ghostty -e btop",
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": " 󰝟",
+		"format-icons": {
+			"default": [
+				"󰕿",
+				"󰖀",
+				"󰕾"
+			]
+		}
+	},
+
+	"upower": {
+		"show-icon": false,
+		"hide-if-empty": true,
+		"tooltip": true,
+		"tooltip-spacing": 20
+	},
+}

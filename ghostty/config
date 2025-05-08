@@ -1,0 +1,6 @@
+theme = rose-pine
+font-family = RobotoMono Nerd Font Mono
+font-style = Medium
+font-style-bold = Bold 
+font-size = 13
+gtk-single-instance = true
