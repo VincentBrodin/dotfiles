@@ -2,7 +2,7 @@
 	"layer": "top", "position": "top",
 	"modules-left": ["custom/logo","hyprland/workspaces", "disk", "memory", "cpu", "temperature"],
 	"modules-center": ["clock"],
-	"modules-right": ["pulseaudio", "network",  "battery" ,"bluetooth"],
+	"modules-right": ["pulseaudio", "network",  "battery" ,"bluetooth", "tray"],
 	"reload_style_on_change":true,
 
 	"custom/logo": {
@@ -18,6 +18,11 @@
 		"format-alt":"{:%d %b %Y}",
 		"interval":1,
 	},
+
+  	"tray": {
+    "icon-size": 14,
+    "spacing": 10
+  	},
 
 	"bluetooth": {
 		"format-on": "",

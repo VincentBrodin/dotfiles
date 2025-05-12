@@ -63,6 +63,7 @@ window#waybar {
 #temperature,
 #window,
 #workspaces,
+#tray,
 #clock {
 	color: @text;
 	padding: 0 5px;
