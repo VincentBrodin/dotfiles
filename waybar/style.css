@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "theme.css";
 * {
 	border: none;
 	font-size: 14px;
@@ -14,25 +14,25 @@ window#waybar {
 
 #custom-logo {
 	padding: 0 10px;
-	color: @sapphire;
+	color: @green;
 }
 
 .modules-right {
 	border-radius: 0 0 0 15px;
 	padding: 0 15px;
-	background-color: @base;
+	background-color: @bg;
 }
 
 .modules-center {
 	padding: 0 15px;
 	border-radius:0  0 15px 15px;
-	background-color: @base;
+	background-color: @bg;
 }
 
 .modules-left {
 	border-radius: 0 0 15px 0;
 	padding: 0 15px;
-	background-color: @base;
+	background-color: @bg;
 }
 
 #battery,
@@ -47,7 +47,7 @@ window#waybar {
 #workspaces,
 #tray,
 #clock {
-	color: @text;
+	color: @fg;
 	padding: 0 5px;
 }
 
@@ -58,7 +58,7 @@ window#waybar {
 }
 
 #battery.charging {
-	color: @lavender;
+	color: @green;
 }
 
 #battery.warning:not(.charging) {
@@ -77,7 +77,7 @@ window#waybar {
 #workspaces button,
 #tags button {
 	background: transparent;
-	color: @text;
+	color: @fg;
 }
 
 #workspaces button:hover,
@@ -86,7 +86,7 @@ window#waybar {
 	box-shadow: none;
 	border: none;
 	text-shadow: none;
-	color: @subtext0;
+	color: @subtext3;
 }
 
 
@@ -97,12 +97,12 @@ window#waybar {
 #tags button.focused,
 #tags button.active,
 #tags button.visible {
-	color: @sapphire;
+	color: @green;
 }
 
 
 @keyframes blink {
 	to {
-		color: @base;
+		color: @bg;
 	}
 }
