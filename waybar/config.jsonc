@@ -16,6 +16,7 @@
 	"clock": {
 		"format": "{:%H:%M:%S}",
 		"format-alt":"{:%d %b %Y}",
+		"tooltip": false,
 		"interval":1,
 	},
 
@@ -91,7 +92,6 @@
 		"format-critical": " {temperatureC}°C",
 		"interval": 1,
 		"critical-threshold": 80,
-		"on-click": "ghostty -e btop",
 	},
 
 	"pulseaudio": {

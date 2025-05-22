@@ -1,22 +1,4 @@
-@define-color base #191724;
-@define-color surface #1f1d2e;
-@define-color overlay #26233a;
-
-@define-color muted #6e6a86;
-@define-color subtle #908caa;
-@define-color text #e0def4;
-
-@define-color love #eb6f92;
-@define-color gold #f6c177;
-@define-color rose #ebbcba;
-@define-color pine #31748f;
-@define-color foam #9ccfd8;
-@define-color iris #c4a7e7;
-
-@define-color highlightLow #21202e;
-@define-color highlightMed #403d52;
-@define-color highlightHigh #524f67;
-
+@import "mocha.css";
 * {
 	border: none;
 	font-size: 14px;
@@ -32,23 +14,23 @@ window#waybar {
 
 #custom-logo {
 	padding: 0 10px;
-	color: @gold;
+	color: @sapphire;
 }
 
 .modules-right {
-	border-radius: 15px 0 0 15px;
+	border-radius: 0 0 0 15px;
 	padding: 0 15px;
 	background-color: @base;
 }
 
 .modules-center {
 	padding: 0 15px;
-	border-radius: 15px 15px 15px 15px;
+	border-radius:0  0 15px 15px;
 	background-color: @base;
 }
 
 .modules-left {
-	border-radius: 0 15px 15px 0;
+	border-radius: 0 0 15px 0;
 	padding: 0 15px;
 	background-color: @base;
 }
@@ -71,20 +53,20 @@ window#waybar {
 
 #temperature.critical,
 #pulseaudio.muted {
-	color: @love;
+	color: @red;
 	padding-top: 0;
 }
 
 #battery.charging {
-	color: @gold;
+	color: @lavender;
 }
 
 #battery.warning:not(.charging) {
-	color: @love;
+	color: @red;
 }
 
 #battery.critical:not(.charging) {
-	color: @love;
+	color: @red;
 	animation-name: blink;
 	animation-duration: 0.5s;
 	animation-timing-function: linear;
@@ -104,7 +86,7 @@ window#waybar {
 	box-shadow: none;
 	border: none;
 	text-shadow: none;
-	color: @iris;
+	color: @subtext0;
 }
 
 
@@ -115,7 +97,7 @@ window#waybar {
 #tags button.focused,
 #tags button.active,
 #tags button.visible {
-	color: @gold;
+	color: @sapphire;
 }
 
 
