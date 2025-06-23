@@ -1,68 +1,38 @@
-@define-color bg rgb(22, 22, 23);
-@define-color bgAlpha rgba(22, 22, 23, 0.4);
+@define-color bg rgb(17, 24, 39);                /* #111827 */
+@define-color fg rgb(209, 213, 219);             /* #D1D5DB */
 
-@define-color fg rgb(201, 199, 205);
-@define-color fgAlpha rgba(201, 199, 205, 0.4);
+@define-color selection_foreground rgb(209, 213, 219);  /* #D1D5DB */
+@define-color selection_background rgb(55, 65, 81);     /* #374151 */
 
-@define-color subtext1 rgb(180, 177, 186);
-@define-color subtext1Alpha rgba(180, 177, 186, 0.4);
+@define-color url_color rgb(149, 127, 184);       /* #957FB8 */
 
-@define-color subtext2 rgb(159, 156, 166);
-@define-color subtext2Alpha rgba(159, 156, 166, 0.4);
+@define-color cursor rgb(209, 213, 219);           /* #D1D5DB */
+@define-color cursor_text_color rgb(17, 24, 39);   /* #111827 */
 
-@define-color subtext3 rgb(139, 134, 147);
-@define-color subtext3Alpha rgba(139, 134, 147, 0.4);
+/* Basic colors */
+@define-color black rgb(107, 114, 128);            /* #6B7280 */
+@define-color bright_black rgb(107, 114, 128);     /* #6B7280 */
 
-@define-color subtext4 rgb(108, 104, 116);
-@define-color subtext4Alpha rgba(108, 104, 116, 0.4);
+@define-color red rgb(252, 165, 165);              /* #FCA5A5 */
+@define-color bright_red rgb(252, 165, 165);       /* #FCA5A5 */
 
-@define-color bg_dark rgb(19, 19, 20);
-@define-color bg_darkAlpha rgba(19, 19, 20, 0.4);
+@define-color green rgb(177, 227, 173);            /* #B1E3AD */
+@define-color bright_green rgb(177, 227, 173);     /* #B1E3AD */
 
-@define-color black rgb(39, 39, 42);
-@define-color blackAlpha rgba(39, 39, 42, 0.4);
+@define-color yellow rgb(251, 193, 157);           /* #FBC19D */
+@define-color bright_yellow rgb(251, 193, 157);    /* #FBC19D */
 
-@define-color red rgb(234, 131, 165);
-@define-color redAlpha rgba(234, 131, 165, 0.4);
+@define-color blue rgb(186, 230, 253);             /* #BAE6FD */
+@define-color bright_blue rgb(186, 230, 253);      /* #BAE6FD */
 
-@define-color green rgb(144, 185, 159);
-@define-color greenAlpha rgba(144, 185, 159, 0.4);
+@define-color magenta rgb(149, 127, 184);          /* #957FB8 */
+@define-color bright_magenta rgb(147, 138, 169);   /* #938AA9 */
 
-@define-color yellow rgb(230, 185, 157);
-@define-color yellowAlpha rgba(230, 185, 157, 0.4);
+@define-color cyan rgb(221, 214, 254);             /* #DDD6FE */
+@define-color bright_cyan rgb(221, 214, 254);      /* #DDD6FE */
 
-@define-color purple rgb(172, 161, 207);
-@define-color purpleAlpha rgba(172, 161, 207, 0.4);
-
-@define-color magenta rgb(226, 158, 202);
-@define-color magentaAlpha rgba(226, 158, 202, 0.4);
-
-@define-color orange rgb(245, 161, 145);
-@define-color orangeAlpha rgba(245, 161, 145, 0.4);
-
-@define-color blue rgb(146, 162, 213);
-@define-color blueAlpha rgba(146, 162, 213, 0.4);
-
-@define-color cyan rgb(133, 181, 186);
-@define-color cyanAlpha rgba(133, 181, 186, 0.4);
-
-@define-color gray0 rgb(24, 24, 26);
-@define-color gray0Alpha rgba(24, 24, 26, 0.4);
-
-@define-color gray1 rgb(27, 27, 28);
-@define-color gray1Alpha rgba(27, 27, 28, 0.4);
-
-@define-color gray2 rgb(42, 42, 44);
-@define-color gray2Alpha rgba(42, 42, 44, 0.4);
-
-@define-color gray3 rgb(49, 49, 52);
-@define-color gray3Alpha rgba(49, 49, 52, 0.4);
-
-@define-color gray4 rgb(59, 59, 62);
-@define-color gray4Alpha rgba(59, 59, 62, 0.4);
-
-@define-color gray5 rgb(68, 68, 72);
-@define-color gray5Alpha rgba(68, 68, 72, 0.4);
+@define-color white rgb(165, 243, 252);            /* #A5F3FC */
+@define-color bright_white rgb(165, 243, 252);     /* #A5F3FC */
 
 
 * {
@@ -75,9 +45,8 @@
 window {
 	margin: 0px;
 	padding: 10px;
-	border: 0.16em solid @green;
+	border: 0.16em solid @blue;
 	background-color: @bg;
-	/* animation: slideIn 0.5s ease-in-out both; */
 	background-clip: padding-box;
 	border-radius: .5rem;
 }
@@ -99,18 +68,6 @@ window {
 	padding: 10px;
 	border: none;
 	background-color: @bg;
-	/* animation: fadeIn 0.5s ease-in-out both; */
-}
-
-/* Fade In */
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
 
 /* Outer Box */
@@ -137,16 +94,15 @@ window {
 	border-radius: 0.1em;
 	color: @fg;
 	background-color: @bg;
-	/* animation: fadeIn 0.5s ease-in-out both; */
 }
 
 #input image {
 	border: none;
-	color: @green;
+	color: @blue;
 }
 
 #input * {
-	outline: 4px solid @green !important;
+	outline: 4px solid @blue;
 }
 
 /* Text */
@@ -154,7 +110,6 @@ window {
 	margin: 5px;
 	border: none;
 	color: @fg;
-	/* animation: fadeIn 0.5s ease-in-out both; */
 }
 
 #entry {
@@ -163,18 +118,20 @@ window {
 
 #entry arrow {
 	border: none;
-	color: @green;
+	color: @blue;
 }
 
 /* Selected Entry */
 #entry:selected {
-	border: 0.11em solid @green;
+	border: 0.11em solid @blue;
+	border-radius: .5rem;
 }
 
 #entry:selected #text {
-	color: @green;
+	color: @blue;
 }
 
-#entry:drop(active) {
-	background-color: @green !important;
+#entry:active {
+    background-color: @blue;
 }
+

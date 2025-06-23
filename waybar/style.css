@@ -1,4 +1,5 @@
 @import "theme.css";
+
 * {
 	border: none;
 	font-size: 14px;
@@ -14,25 +15,25 @@ window#waybar {
 
 #custom-logo {
 	padding: 0 10px;
-	color: @green;
+	color: @blue;
 }
 
 .modules-right {
 	border-radius: 0 0 0 15px;
 	padding: 0 15px;
-	background-color: @bg;
+	background-color: @bgAlpha;
 }
 
 .modules-center {
 	padding: 0 15px;
-	border-radius:0  0 15px 15px;
-	background-color: @bg;
+	border-radius: 0 0 15px 15px;
+	background-color: @bgAlpha;
 }
 
 .modules-left {
 	border-radius: 0 0 15px 0;
 	padding: 0 15px;
-	background-color: @bg;
+	background-color: @bgAlpha;
 }
 
 #battery,
@@ -97,7 +98,7 @@ window#waybar {
 #tags button.focused,
 #tags button.active,
 #tags button.visible {
-	color: @green;
+	color: @blue;
 }
 
 

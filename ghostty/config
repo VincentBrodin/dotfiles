@@ -4,24 +4,27 @@ font-style-bold = Bold
 font-size = 12
 gtk-single-instance = true
 
-palette = 0=#27272a
-palette = 1=#ea83a5
-palette = 2=#90b99f
-palette = 3=#e6b99d
-palette = 4=#9ca2cf
-palette = 5=#aca1cf
-palette = 6=#85b5ba
-palette = 7=#c9c7cd
-palette = 8=#353539
-palette = 9=#ED96B3
-palette = 10=#a7c8b3
-palette = 11=#eac5ae
-palette = 12=#acb1d7
-palette = 13=#b7aed5
-palette = 14=#97c0c4
-palette = 15=#d3d1d7
-background = 161617
-foreground = c9c7cd
-cursor-color = c9c7cd
-selection-background = 3C3B3E
-selection-foreground = c9c7cd
+# Palette
+palette = 0=#6B7280
+palette = 1=#FCA5A5
+palette = 2=#B1E3AD
+palette = 3=#FBC19D
+palette = 4=#BAE6FD
+palette = 5=#957FB8
+palette = 6=#DDD6FE
+palette = 7=#A5F3FC
+palette = 8=#6B7280
+palette = 9=#FCA5A5
+palette = 10=#B1E3AD
+palette = 11=#FBC19D
+palette = 12=#BAE6FD
+palette = 13=#938AA9
+palette = 14=#DDD6FE
+palette = 15=#A5F3FC
+
+# Colors
+background = 111827
+foreground = D1D5DB
+cursor-color = D1D5DB
+selection-background = 374151
+selection-foreground = D1D5DB

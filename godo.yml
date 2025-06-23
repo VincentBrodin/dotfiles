@@ -8,3 +8,4 @@ commands:
       - $ln -s /home/vince/dotfiles/waybar /home/vince/.config/waybar
       - $ln -s /home/vince/dotfiles/wofi /home/vince/.config/wofi
       - $ln -s /home/vince/dotfiles/yazi /home/vince/.config/yazi
+      - $ln -s /home/vince/dotfiles/rofi /home/vince/.config/rofi
