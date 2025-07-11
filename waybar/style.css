@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-	background: transparent;
+	background-color: @bg;
 	margin: 5px;
 }
 
@@ -21,19 +21,19 @@ window#waybar {
 .modules-right {
 	border-radius: 0 0 0 15px;
 	padding: 0 15px;
-	background-color: @bgAlpha;
+	background-color: @bg;
 }
 
 .modules-center {
 	padding: 0 15px;
 	border-radius: 0 0 15px 15px;
-	background-color: @bgAlpha;
+	background-color: @bg;
 }
 
 .modules-left {
 	border-radius: 0 0 15px 0;
 	padding: 0 15px;
-	background-color: @bgAlpha;
+	background-color: @bg;
 }
 
 #battery,
