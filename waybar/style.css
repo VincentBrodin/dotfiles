@@ -1,109 +1,29 @@
-@import "theme.css";
-
 * {
-	border: none;
-	font-size: 14px;
-	font-family: "RobotoMono Nerd Font";
+	font-family: "JetBrains Mono", monospace;
+	font-size: 13px;
 	font-weight: bold;
-	min-height: 25px;
 }
-
 window#waybar {
-	background-color: @bg;
-	margin: 5px;
+	background: #1f1f28; 
+	color: #dcd7ba;      
 }
 
-#custom-logo {
-	padding: 0 10px;
-	color: @blue;
-}
-
+.modules-left,
+.modules-center,
 .modules-right {
-	border-radius: 0 0 0 15px;
-	padding: 0 15px;
-	background-color: @bg;
+  margin: 0 30px;
 }
 
-.modules-center {
-	padding: 0 15px;
-	border-radius: 0 0 15px 15px;
-	background-color: @bg;
+#workspaces button {
+	padding: 0px;
+	border-radius: 0px;
 }
 
-.modules-left {
-	border-radius: 0 0 15px 0;
-	padding: 0 15px;
-	background-color: @bg;
+#workspaces button.active {
+	color: #c0a36e;
 }
 
-#battery,
-#bluetooth,
-#pulseaudio,
-#network,
-#disk,
-#memory,
-#cpu,
-#temperature,
-#window,
-#workspaces,
-#tray,
-#clock {
-	color: @fg;
-	padding: 0 5px;
+#workspaces button:hover {
+	background: #313244; 
 }
 
-#temperature.critical,
-#pulseaudio.muted {
-	color: @red;
-	padding-top: 0;
-}
-
-#battery.charging {
-	color: @green;
-}
-
-#battery.warning:not(.charging) {
-	color: @red;
-}
-
-#battery.critical:not(.charging) {
-	color: @red;
-	animation-name: blink;
-	animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-#workspaces button,
-#tags button {
-	background: transparent;
-	color: @fg;
-}
-
-#workspaces button:hover,
-#tags button:hover {
-	background: none;
-	box-shadow: none;
-	border: none;
-	text-shadow: none;
-	color: @subtext3;
-}
-
-
-
-#workspaces button.focused,
-#workspaces button.active,
-#workspaces button.visible,
-#tags button.focused,
-#tags button.active,
-#tags button.visible {
-	color: @blue;
-}
-
-
-@keyframes blink {
-	to {
-		color: @bg;
-	}
-}

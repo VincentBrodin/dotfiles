@@ -4,8 +4,6 @@ commands:
       - $ln -s /home/vince/dotfiles/btop /home/vince/.config/btop
       - $ln -s /home/vince/dotfiles/ghostty /home/vince/.config/ghostty
       - $ln -s /home/vince/dotfiles/hypr /home/vince/.config/hypr
-      - $ln -s /home/vince/dotfiles/swaync /home/vince/.config/swaync
       - $ln -s /home/vince/dotfiles/waybar /home/vince/.config/waybar
-      - $ln -s /home/vince/dotfiles/wofi /home/vince/.config/wofi
       - $ln -s /home/vince/dotfiles/yazi /home/vince/.config/yazi
-      - $ln -s /home/vince/dotfiles/rofi /home/vince/.config/rofi
+      - $ln -s /home/vince/dotfiles/ulauncher /home/vince/.config/ulauncher
